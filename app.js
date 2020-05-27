@@ -1,7 +1,9 @@
 var AWS = require('aws-sdk')
 
+// If you are not using the default profile
 var credentials = new AWS.SharedIniFileCredentials({profile: 'personal'});
 AWS.config.credentials = credentials;
+
 
 var requiredRegions = ['us-east-1', 'us-east-2', 'us-west-1', 'us-west-2']
 
